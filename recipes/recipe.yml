@@ -42,6 +42,7 @@ modules:
           - io.github.kolunmi.Bazaar
           - app.zen_browser.zen
       - scope: user # Also add Flathub user repo, but no user packages
+        install:    
           - com.valvesoftware.Steam
           - com.rafaelmardojai.Blanket
           - md.obsidian.Obsidian
@@ -52,4 +53,5 @@ modules:
           - com.visualstudio.code
           - com.ranfdev.DistroShelf
           - com.todoist.Todoist
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
