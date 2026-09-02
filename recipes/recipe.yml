@@ -49,6 +49,8 @@ modules:
           - org.gnome.Loupe
           - io.github.kolunmi.Bazaar
           - app.zen_browser.zen
+          - com.github.tchx84.Flatseal
+          - com.mattjakeman.ExtensionManager
       - scope: user # Also add Flathub user repo, but no user packages
         install:
           - com.valvesoftware.Steam
