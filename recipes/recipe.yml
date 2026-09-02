@@ -57,4 +57,5 @@ modules:
           - com.ranfdev.DistroShelf
           - com.todoist.Todoist
           - org.gnome.Solanum
+          - io.podman_desktop.PodmanDesktop
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
