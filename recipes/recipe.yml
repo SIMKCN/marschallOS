@@ -56,5 +56,5 @@ modules:
           - com.visualstudio.code
           - com.ranfdev.DistroShelf
           - com.todoist.Todoist
-
+          - org.gnome.Solanum
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
