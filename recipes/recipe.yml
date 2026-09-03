@@ -41,6 +41,7 @@ modules:
       - 307
       - 5724 # battery-health-charging
       - 8834 # copyous clipboard manager
+      - 6670 # bluetooth battery meter
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
