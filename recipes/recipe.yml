@@ -39,6 +39,7 @@ modules:
     install:
       - 3193
       - 307
+      - 5724 # battery-health-charging
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
