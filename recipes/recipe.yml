@@ -16,6 +16,9 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
   - type: dnf
     repos:
       copr:
@@ -24,6 +27,7 @@ modules:
       packages:
         - micro
         - starship
+        - fastfetch
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -31,6 +35,10 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - gnome-software
+  - type: gnome-extensions
+    install:
+      - 3193
+      - 307
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
@@ -40,8 +48,10 @@ modules:
           - org.gnome.Loupe
           - io.github.kolunmi.Bazaar
           - app.zen_browser.zen
+          - com.github.tchx84.Flatseal
+          - com.mattjakeman.ExtensionManager
       - scope: user # Also add Flathub user repo, but no user packages
-        install:    
+        install:
           - com.valvesoftware.Steam
           - com.rafaelmardojai.Blanket
           - md.obsidian.Obsidian
@@ -52,5 +62,6 @@ modules:
           - com.visualstudio.code
           - com.ranfdev.DistroShelf
           - com.todoist.Todoist
-
+          - org.gnome.Solanum
+          - io.podman_desktop.PodmanDesktop
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
