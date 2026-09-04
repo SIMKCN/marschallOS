@@ -41,7 +41,6 @@ modules:
     install:
       - 3193
       - 307
-      - 5724 # battery-health-charging
       - 8834 # copyous clipboard manager
   - type: default-flatpaks
     configurations:
