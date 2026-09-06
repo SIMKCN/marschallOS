@@ -1,0 +1,13 @@
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+enable-hot-corners=true
+clock-show-weekday=true
+font-name='Roboto Slab 12'
+
+
+[org.gnome.shell]
+enabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'copyous@boerdereinar.dev']
+favorite-apps=['org.signal.Signal', 'io.github.kolunmi.Bazaar', 'md.obsidian.Obsidian', 'com.bitwarden.desktop', 'com.visualstudio.code']
+
+
+
