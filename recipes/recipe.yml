@@ -28,6 +28,7 @@ modules:
         - micro
         - starship
         - fastfetch
+        - framework_tool
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
