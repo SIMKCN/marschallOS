@@ -29,6 +29,8 @@ modules:
         - micro
         - starship
         - fastfetch
+        - multimedia
+        - ffmpeg
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -72,3 +74,13 @@ modules:
           - org.videolan.VLC
           - org.localsend.localsend_app
   - type: signing # this sets up the proper policy & signing files for signed images to work full
+  - type: rpm-ostree
+      repos:
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      install:
+        - tailscale
+
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled.service
