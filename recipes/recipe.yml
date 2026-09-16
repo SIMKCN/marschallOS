@@ -12,6 +12,16 @@ image-version: latest # You can pin to a specific version of Fedora as well
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: rpm-ostree
+    repos:
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    install:
+      - tailscale
+
+  - type: systemd
+    system:
+        enabled:
+          - tailscaled.service
   - type: files
     files:
       - source: system
@@ -29,8 +39,6 @@ modules:
         - micro
         - starship
         - fastfetch
-        - multimedia
-        - ffmpeg
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -73,14 +81,6 @@ modules:
           - com.discordapp.Discord
           - org.videolan.VLC
           - org.localsend.localsend_app
-  - type: signing # this sets up the proper policy & signing files for signed images to work full
-  - type: rpm-ostree
-      repos:
-        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-      install:
-        - tailscale
 
-  - type: systemd
-    system:
-      enabled:
-        - tailscaled.service
+  - type: signing
+
