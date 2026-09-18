@@ -38,6 +38,7 @@ jobs:
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
+          build_opts: ${{ secrets.SIGNING_SECRET == '' && '--no-sign' || '' }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
 
