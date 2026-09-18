@@ -7,7 +7,6 @@ font-name='Roboto Slab 12'
 
 [org.gnome.shell]
 enabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'copyous@boerdereinar.dev']
-favorite-apps=['org.signal.Signal', 'io.github.kolunmi.Bazaar', 'md.obsidian.Obsidian', 'com.bitwarden.desktop', 'com.visualstudio.code']
-
+favorite-apps=['org.signal.Signal.desktop', 'io.github.kolunmi.Bazaar.desktop', 'md.obsidian.Obsidian.desktop', 'com.bitwarden.desktop.desktop', 'com.visualstudio.code.desktop']
 
 
