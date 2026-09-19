@@ -6,7 +6,7 @@ name: marschallos-kde
 description: my personal image which is obviously the best.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/kinoite:main
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
@@ -36,5 +36,5 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - nvtop
-  - from-file: recipes/recipe-common-flatpaks.yml
+  - from-file: recipe-common-flatpaks.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work full
