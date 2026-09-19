@@ -37,6 +37,7 @@ modules:
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
         - gnome-software
         - nvtop
+        - gnome-tour
   - type: gnome-extensions
     install:
       - 3193
