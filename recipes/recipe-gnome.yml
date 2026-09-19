@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: marschallos
+name: marschallos-gnome
 # description will be included in the image's metadata
 description: my personal image which is obviously the best.
 
@@ -43,33 +43,6 @@ modules:
       - 3193
       - 307
       - 8834 # copyous clipboard manager
-  - type: default-flatpaks
-    configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - org.gnome.Loupe
-          - io.github.kolunmi.Bazaar
-          - app.zen_browser.zen
-          - com.github.tchx84.Flatseal
-          - com.mattjakeman.ExtensionManager
-      - scope: user # Also add Flathub user repo, but no user packages
-        install:
-          - com.valvesoftware.Steam
-          - com.rafaelmardojai.Blanket
-          - md.obsidian.Obsidian
-          - com.bitwarden.desktop
-          - org.signal.Signal
-          - org.gnome.Podcasts
-          - dev.geopjr.Tuba
-          - com.visualstudio.code
-          - com.ranfdev.DistroShelf
-          - com.todoist.Todoist
-          - org.gnome.Solanum
-          - io.podman_desktop.PodmanDesktop
-          - org.gnome.Snapshot
-          - com.discordapp.Discord
-          - org.videolan.VLC
-          - org.localsend.localsend_app
+  - from-file: recipes/recipe-common-flatpaks.yml
+
   - type: signing # this sets up the proper policy & signing files for signed images to work full

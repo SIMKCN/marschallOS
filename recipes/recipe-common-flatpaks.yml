@@ -1,0 +1,31 @@
+
+
+type: default-flatpaks
+system:
+  install:
+    - org.gnome.Loupe
+    - io.github.kolunmi.Bazaar
+    - app.zen_browser.zen
+    - com.github.tchx84.Flatseal
+    - com.mattjakeman.ExtensionManager
+
+user:
+  install:
+    - com.valvesoftware.Steam
+    - com.rafaelmardojai.Blanket
+    - md.obsidian.Obsidian
+    - com.bitwarden.desktop
+    - org.signal.Signal
+    - org.gnome.Podcasts
+    - dev.geopjr.Tuba
+    - com.visualstudio.code
+    - com.ranfdev.DistroShelf
+    - com.todoist.Todoist
+    - org.gnome.Solanum
+    - io.podman_desktop.PodmanDesktop
+    - org.gnome.Snapshot
+    - com.discordapp.Discord
+    - org.videolan.VLC
+    - org.localsend.localsend_app
+ 
+ 
