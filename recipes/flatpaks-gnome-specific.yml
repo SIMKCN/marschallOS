@@ -1,0 +1,17 @@
+
+
+type: default-flatpaks@v1
+system:
+  install:
+    - org.gnome.Loupe
+    - com.mattjakeman.ExtensionManager
+
+user:
+  install:
+    - com.rafaelmardojai.Blanket
+    - org.gnome.Podcasts
+    - dev.geopjr.Tuba
+    - org.gnome.Solanum
+    - org.gnome.Snapshot
+ 
+ 
