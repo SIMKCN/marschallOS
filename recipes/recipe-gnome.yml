@@ -43,6 +43,7 @@ modules:
       - 3193
       - 307
       - 8834 # copyous clipboard manager
-  - from-file: recipes/recipe-common-flatpaks.yml
+  - from-file: flatpaks-all.yml
+  - from-file: flatpaks-gnome-specific.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work full

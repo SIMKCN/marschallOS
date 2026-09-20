@@ -1,0 +1,24 @@
+
+
+type: default-flatpaks@v1
+system:
+  install:
+    - io.github.kolunmi.Bazaar
+    - app.zen_browser.zen
+    - com.github.tchx84.Flatseal
+
+user:
+  install:
+    - com.valvesoftware.Steam
+    - md.obsidian.Obsidian
+    - com.bitwarden.desktop
+    - org.signal.Signal
+    - com.visualstudio.code
+    - com.ranfdev.DistroShelf
+    - com.todoist.Todoist
+    - io.podman_desktop.PodmanDesktop
+    - com.discordapp.Discord
+    - org.videolan.VLC
+    - org.localsend.localsend_app
+ 
+ 
