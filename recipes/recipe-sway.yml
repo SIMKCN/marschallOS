@@ -6,7 +6,7 @@ name: marschallos-sway
 description: my personal image which is obviously the best.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/sericea-main
+base-image: ghcr.io/ublue-os/base-main
 image-version: latest # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
@@ -25,6 +25,7 @@ modules:
         - atim/starship
     install:
       packages:
+        - sway
         - micro
         - starship
         - fastfetch
