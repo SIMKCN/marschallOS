@@ -16,10 +16,6 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  - type: systemd
-    system:
-      enabled:
-        - greetd.service
   - type: brew
     nofile-limits: true
     brew-analytics: false
@@ -29,8 +25,6 @@ modules:
         - atim/starship
     install:
       packages:
-        - greetd
-        - tuigreet
         - sway
         - micro
         - starship
