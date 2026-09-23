@@ -13,15 +13,6 @@ image-version: latest # You can pin to a specific version of Fedora as well
 # you can include multiple instances of the same module
 modules:
   - type: rpm-ostree
-    repos:
-      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    install:
-      - tailscale
-
-  - type: systemd
-    system:
-        enabled:
-          - tailscaled.service
   - type: files
     files:
       - source: system
