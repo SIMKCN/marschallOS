@@ -53,6 +53,7 @@ modules:
       - 3193
       - 307
       - 8834 # copyous clipboard manager
+      - 517 # caffeine 
   - type: signing
 
   - from-file: flatpaks-all.yml
