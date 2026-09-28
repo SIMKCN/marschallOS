@@ -2,18 +2,42 @@
 # MarschallOS
 
 An image with all the tools I need and want in an OS. 
+Its based on Fedora Silverblue and Kinoite, first one for Gnome, last one for KDE image. 
+
+## GNOME Image
+Following software ships with the GNOME image of MarschallOS:
+  - com.rafaelmardojai.Blanket
+  - org.gnome.Podcasts
+  - dev.geopjr.Tuba
+  - org.gnome.Solanum
+  - org.gnome.Snapshot
+  - org.gnome.Loupe
+  - com.mattjakeman.ExtensionManager
+
+### GNOME Extensions:
+  - Blur my Shell
+  - Dash to Dock
+  - Copyous
 
 
-## BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# Flatpaks in all images
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+Following flatpaks are included in both images:
+  - com.valvesoftware.Steam
+  - md.obsidian.Obsidian
+  - com.bitwarden.desktop
+  - org.signal.Signal
+  - com.visualstudio.code
+  - com.ranfdev.DistroShelf
+  - com.todoist.Todoist
+  - io.podman_desktop.PodmanDesktop
+  - com.discordapp.Discord
+  - org.videolan.VLC
+  - org.localsend.localsend_app
+    
+This image is built with [BlueBuild](https://blue-build.org/]. 
 
 ### Installation
-
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
