@@ -2,7 +2,7 @@
 # MarschallOS
 
 An image with all the tools I need and want in an OS. 
-Its based on Fedora Silverblue and Kinoite, first one for Gnome, last one for KDE image. 
+Its based on Fedora Silverblue and Kinoite, first one for Gnome, last one for the KDE image. 
 
 ## GNOME Image
 Following software ships with the GNOME image of MarschallOS:
@@ -19,6 +19,9 @@ Following software ships with the GNOME image of MarschallOS:
   - Dash to Dock
   - Copyous
 
+## KDE Image
+
+Currently only ships the flatpaks listed below. 
 
 # Flatpaks in all images
 
