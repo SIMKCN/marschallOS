@@ -38,7 +38,7 @@ Following flatpaks are included in both images:
   - org.videolan.VLC
   - org.localsend.localsend_app
     
-This image is built with [BlueBuild](https://blue-build.org/]. 
+This image is built with [BlueBuild](https://blue-build.org/). 
 
 ### Installation
 
