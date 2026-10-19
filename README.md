@@ -40,6 +40,11 @@ Following flatpaks are included in both images:
     
 This image is built with [BlueBuild](https://blue-build.org/). 
 
+## *New Image* Budgie Desktop
+Ships the same software as the KDE image except using the Budgie Desktop.
+I'm planning to make this one the default image.
+
+
 ### Installation
 
 To rebase an existing atomic Fedora installation to the latest build:
