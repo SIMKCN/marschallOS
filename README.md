@@ -18,11 +18,14 @@ Following flatpaks are included:
 
 ### Default Flatpaks
 
+  - io.github.kolunmi.Bazaar (system-wide)
+  - com.github.tchx84.Flatseal (system-wide)
   - com.bitwarden.desktop
   - org.signal.Signal
   - org.videolan.VLC
   - md.obsidian.Obsidian
   - org.localsend.localsend_app
+
 
 ### Advanced Flatpaks
 

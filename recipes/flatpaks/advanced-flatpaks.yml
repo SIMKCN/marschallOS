@@ -1,0 +1,14 @@
+type: default-flatpaks@v1
+
+user:
+  install:
+    - com.valvesoftware.Steam
+    - com.visualstudio.code
+    - com.ranfdev.DistroShelf
+    - com.todoist.Todoist
+    - io.podman_desktop.PodmanDesktop
+    - com.discordapp.Discord
+
+
+
+ 
