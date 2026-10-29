@@ -7,7 +7,7 @@ Currently there are four images.
 
 | Name | Info | Stability |
 | ------ | ---------- | ---------- |
-| marschallos-gnome | Fedora Silverblue + Gnome Extensions + Default & Advanced Flatpaks | Stable
+| marschallos-gnome | Fedora Silverblue + Gnome Extensions + Default & Advanced & GNOME-specific Flatpaks | Stable
 | marschallos-kde | Fedora Kinoite + Default & Advanced Flatpaks | Stable
 | marschallos-budgie | Fedora Budgie Atomic + Default & Advanced Flatpaks | Stable
 | marschallos-sway | Fedora Sway Atomic + custom sway config, wofi, waybar + Default Flatpaks  | not stable, lots of bugs
@@ -36,7 +36,13 @@ Following flatpaks are included:
   - com.todoist.Todoist
   - io.podman_desktop.PodmanDesktop
 
+## GNOME-specific Flatpaks
 
+  - com.rafaelmardojai.Blanket
+  - org.gnome.Podcasts
+  - dev.geopjr.Tuba
+  - org.gnome.Solanum
+  - org.gnome.Snapshot
 
 
 
