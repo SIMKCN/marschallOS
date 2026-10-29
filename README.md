@@ -1,40 +1,44 @@
 
 # MarschallOS
 
-An image with all the tools I need and want in an OS. 
-Its based on Fedora Silverblue and Kinoite, first one for Gnome, last one for KDE image. 
+A couple of images for me to learn how immutable distros work and how to build them.
 
-## GNOME Image
-Following software ships with the GNOME image of MarschallOS:
-  - com.rafaelmardojai.Blanket
-  - org.gnome.Podcasts
-  - dev.geopjr.Tuba
-  - org.gnome.Solanum
-  - org.gnome.Snapshot
-  - org.gnome.Loupe
-  - com.mattjakeman.ExtensionManager
+Currently there are four images.
 
-### GNOME Extensions:
-  - Blur my Shell
-  - Dash to Dock
-  - Copyous
+| Name | Info | Stability |
+| ------ | ---------- | ---------- |
+| marschallos-gnome | Fedora Silverblue + Gnome Extensions + Default & Advanced Flatpaks | Stable
+| marschallos-kde | Fedora Kinoite + Default & Advanced Flatpaks | Stable
+| marschallos-budgie | Fedora Budgie Atomic + Default & Advanced Flatpaks | Stable
+| marschallos-sway | Fedora Sway Atomic + custom sway config, wofi, waybar + Default Flatpaks  | not stable, lots of bugs
 
+## Applications
 
-# Flatpaks in all images
+Following flatpaks are included:
 
-Following flatpaks are included in both images:
-  - com.valvesoftware.Steam
-  - md.obsidian.Obsidian
+### Default Flatpaks
+
   - com.bitwarden.desktop
   - org.signal.Signal
+  - org.videolan.VLC
+  - md.obsidian.Obsidian
+  - org.localsend.localsend_app
+
+### Advanced Flatpaks
+
+  - com.valvesoftware.Steam
+  - com.discordapp.Discord
   - com.visualstudio.code
   - com.ranfdev.DistroShelf
   - com.todoist.Todoist
   - io.podman_desktop.PodmanDesktop
-  - com.discordapp.Discord
-  - org.videolan.VLC
-  - org.localsend.localsend_app
-    
+
+
+
+
+
+
+
 This image is built with [BlueBuild](https://blue-build.org/]. 
 
 ### Installation
