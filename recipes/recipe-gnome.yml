@@ -56,7 +56,8 @@ modules:
       - 517 # caffeine 
   - type: signing
 
-  - from-file: flatpaks-all.yml
-  - from-file: flatpaks-gnome-specific.yml
+  - from-file: flatpaks/default-flatpaks.yml
+  - from-file: flatpaks/advanced-flatpaks.yml
+  - from-file: flatpaks/flatpaks-gnome-specific.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work full

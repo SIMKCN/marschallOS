@@ -1,49 +1,54 @@
 
 # MarschallOS
 
-An image with all the tools I need and want in an OS. 
-Its based on Fedora Silverblue and Kinoite, first one for Gnome, last one for the KDE image. 
+A couple of images for me to learn how immutable distros work and how to build them.
 
-## GNOME Image
-Following software ships with the GNOME image of MarschallOS:
+Currently there are four images.
+
+| Name | Info | Stability |
+| ------ | ---------- | ---------- |
+| marschallos-gnome | Fedora Silverblue + Gnome Extensions + Default & Advanced & GNOME-specific Flatpaks | Stable
+| marschallos-kde | Fedora Kinoite + Default & Advanced Flatpaks | Stable
+| marschallos-budgie | Fedora Budgie Atomic + Default & Advanced Flatpaks | Stable
+| marschallos-sway | Fedora Sway Atomic + custom sway config, wofi, waybar + Default Flatpaks  | not stable, lots of bugs
+
+## Applications
+
+Following flatpaks are included:
+
+### Default Flatpaks
+
+  - io.github.kolunmi.Bazaar (system-wide)
+  - com.github.tchx84.Flatseal (system-wide)
+  - com.bitwarden.desktop
+  - org.signal.Signal
+  - org.videolan.VLC
+  - md.obsidian.Obsidian
+  - org.localsend.localsend_app
+
+
+### Advanced Flatpaks
+
+  - com.valvesoftware.Steam
+  - com.discordapp.Discord
+  - com.visualstudio.code
+  - com.ranfdev.DistroShelf
+  - com.todoist.Todoist
+  - io.podman_desktop.PodmanDesktop
+
+## GNOME-specific Flatpaks
+
   - com.rafaelmardojai.Blanket
   - org.gnome.Podcasts
   - dev.geopjr.Tuba
   - org.gnome.Solanum
   - org.gnome.Snapshot
-  - org.gnome.Loupe
-  - com.mattjakeman.ExtensionManager
 
-### GNOME Extensions:
-  - Blur my Shell
-  - Dash to Dock
-  - Copyous
 
-## KDE Image
 
-Currently only ships the flatpaks listed below. 
 
-# Flatpaks in all images
 
-Following flatpaks are included in both images:
-  - com.valvesoftware.Steam
-  - md.obsidian.Obsidian
-  - com.bitwarden.desktop
-  - org.signal.Signal
-  - com.visualstudio.code
-  - com.ranfdev.DistroShelf
-  - com.todoist.Todoist
-  - io.podman_desktop.PodmanDesktop
-  - com.discordapp.Discord
-  - org.videolan.VLC
-  - org.localsend.localsend_app
-    
-This image is built with [BlueBuild](https://blue-build.org/). 
-
-## *New Image* Budgie Desktop
-Ships the same software as the KDE image except using the Budgie Desktop.
-I'm planning to make this one the default image.
-
+This image is built with [BlueBuild](https://blue-build.org/]. 
 
 ### Installation
 

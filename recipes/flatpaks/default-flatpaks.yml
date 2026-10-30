@@ -1,0 +1,13 @@
+type: default-flatpaks@v1
+system:
+  install:
+    - io.github.kolunmi.Bazaar
+    - com.github.tchx84.Flatseal
+
+user:
+  install:
+    - com.bitwarden.desktop
+    - org.signal.Signal
+    - org.videolan.VLC
+    - org.localsend.localsend_app
+    - md.obsidian.Obsidian
